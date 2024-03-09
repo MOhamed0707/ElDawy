@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Foods Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .landing-banner {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fresh Foods</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Products</button>
+            <div class="dropdown-content">
+                <a href="#">Fruits</a>
+                <a href="#">Vegetables</a>
+                <a href="#">Dairy</a>
+            </div>
+        </div>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <img class="landing-banner" src="https://via.placeholder.com/1920x400" alt="Fresh Foods Banner">
+
+    <div class="container">
+        <!-- Your product cards or content goes here -->
+        <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2>Product 1</h2>
+            <p>Description of the product goes here.</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2>Product 2</h2>
+            <p>Description of the product goes here.</p>
+        </div>
+
+        <!-- Add more product cards as needed -->
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus soluta explicabo aperiam tempore. Optio, ad doloremque dolore magni omnis, in pariatur laborum temporibus quo nostrum commodi minus voluptates! Nam, sequi?</p>
+
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus soluta explicabo aperiam tempore. Optio, ad doloremque dolore magni omnis, in pariatur laborum temporibus quo nostrum commodi minus voluptates! Nam, sequi?</p>
+        
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus soluta explicabo aperiam tempore. Optio, ad doloremque dolore magni omnis, in pariatur laborum temporibus quo nostrum commodi minus voluptates! Nam, sequi?</p>
+        
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus soluta explicabo aperiam tempore. Optio, ad doloremque dolore magni omnis, in pariatur laborum temporibus quo nostrum commodi minus voluptates! Nam, sequi?</p>
+        
+    </div>
+
+    <!-- Add more sections or content as needed -->
+
+    <script>
+        // You can add JavaScript functionality here if needed
+    </script>
+
+</body>
+</html>
