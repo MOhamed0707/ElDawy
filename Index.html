@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الضّوى للتصدير</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #03c71da9;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .carousel-container {
+            max-width: 1900px;
+            margin: 20px auto;
+            overflow: hidden;
+            height: 420px; /* Set the height of the carousel container */
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%; /* Set the height of the carousel images */
+            object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto 100px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+           
+            
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo_t.png" alt="Company Logo">
+        <h1>الضّوى للتصدير</h1>
+        <p>بوابتك إلى التجارة العالمية</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="test.html">الرئيسية</a></li>
+            <li><a href="services.html">الخدمات</a></li>
+            <li class="dropdown">
+                <a href="products2.html" class="dropbtn">المنتجات</a>
+                <div class="dropdown-content">
+                    <a href="#product1">خضروات طازجة</a>
+                    <a href="#product2">حبوب</a>
+                    <a href="#product3">فواكه</a>
+                </div>
+            </li>
+            <li><a href="#about.html">من نحن</a></li>
+            <li><a href="contact-us.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+     <!-- Bootstrap Carousel -->
+     <div class="carousel-container">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="veg-1.jpg" class="d-block w-100" alt="Carousel Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="veg-1e.jpg" class="d-block w-100" alt="Carousel Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="veg-1.jpg" class="d-block w-100" alt="Carousel Image 3">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae ex obcaecati nulla. Architecto neque mollitia ipsam ea, repellat, culpa totam labore eos, quo autem unde! Facilis saepe tenetur cumque id.</p>
+  
+        </div>
+    </div>
+     </div>
+     
+
+    <section>
+        <div class="container">
+            <div class="feature">
+                <h2>منتجات عالية الجودة</h2>
+                <p>استكشف مجموعة واسعة من منتجات التصدير عالية الجودة لدينا.</p>
+            </div>
+
+            <div class="feature">
+                <h2>تواجد عالمي</h2>
+                <p>نقدم خدمات التوصيل للعملاء في جميع أنحاء العالم، مضمونة الوصول العالمي.</p>
+            </div>
+
+            <div class="feature">
+                <h2>لوجستيات فعّالة</h2>
+                <p>تضمن لوجستياتنا الفعّالة وصولك إلى المنتجات بشكل في الوقت المحدد وبشكل موثوق.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 شركة التصدير. جميع الحقوق محفوظة.</p>
+    </footer>
+   <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+
+</html>
